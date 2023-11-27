@@ -1,0 +1,445 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.Gray{
+    color: #828282;
+}
+.Black{
+    color: black;
+}
+
+.Burger{
+    display: none;
+    position: relative;
+    z-index: 9999;
+}
+
+.Burger span,
+.Burger::after,
+.Burger::before{
+    content: '';
+    width: 33px;
+    height: 3.84px;
+    position: absolute;
+    background-color: #070707;
+    transition: all 0.2s;
+}
+
+.Burger span{
+    top: calc(2*3.84px)
+}
+
+.Burger::after{
+    top: calc(4*3.84px)
+}
+
+.Burger.Active::after,.Burger.Active::before{
+    top: calc(2*3.84px);
+    transform: rotate(-45deg);
+}
+
+.Burger.Active span{
+    transform: rotate(45deg);
+}
+
+h2{
+    font-size: 34px;
+    line-height: 42.09px;
+    color: #070707;
+}
+
+header{
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+    border-bottom: 1px solid #828282;
+}
+
+nav a{
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover{
+    color: black;
+}
+
+.HomeSection{
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-top: 40px;
+    margin-bottom: 104px;
+}
+
+.HomeSection img{
+    width: 100%;
+}
+
+.HomeSection .TextArea{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 123px;
+    margin-bottom: 30.64px;
+}
+
+h1{
+    font-size: 47.34px;
+    line-height: 58.61px;
+    color: #070707;
+    width: 120px;
+    font-weight: bold;
+}
+
+.TextArea .Middle{
+    align-self: flex-end;
+    font-size: 18px;
+    line-height: 21.83px;
+    width: 144px;
+}
+
+.TextArea .Last{
+    align-self: flex-end;
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+}
+
+.AboutSection{
+    height: 506px;
+    background-color: #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+
+.AboutSection h2{
+    margin-bottom: 17.62px;
+}
+.AboutSection p{
+    margin-bottom: 21px;
+}
+
+.SkillsSection{
+    height: 610px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 91px 250px 110px 250px;
+}
+
+.SkillsSection h2{
+    margin-bottom: 69px;
+}
+
+.SkillsSection p{
+    font-size: 18px;
+    margin-bottom: 83.5px;
+}
+
+.CardArea{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.Card{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.Card svg{
+    margin-bottom: 23px;
+}
+
+.Card p{
+    margin-bottom: 41.41px;
+}
+
+.StarArea svg{
+    margin-right: 9px;
+}
+
+.StarArea svg:last-child{
+    margin-right: 0px;
+}
+
+.Empty path{
+    fill: #E5E5E5;
+}
+
+.PortfolioSection{
+    width: 100%;
+
+    padding: 112px 250px 96px 250px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background-color: #F6F6F6;
+}
+
+.PortfolioSection h2{
+    margin-bottom: 47px;
+}
+
+.PortfolioItem img{
+    width: 100%;
+    margin-bottom: 45.9px;
+}
+
+.PortfolioItem p{
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.PortfolioItem{
+    margin-bottom: 100px;
+}
+
+.PortfolioItem:last-child{
+    margin-bottom: 0px;
+}
+
+.ContactsSection{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 114.24px;
+    padding-bottom: 79.78px;
+}
+
+.ContactsSection h2{
+    margin-bottom: 20px;
+}
+
+.ContactsSection p{
+    font-size: 18px;
+    margin-bottom: 29px;
+    text-align: center;
+}
+
+.ContactsSection button{
+    width: 122px;
+    height: 23px;
+     
+    background-color: black;
+    color: #ffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 123.19px;
+}
+
+.SocialIconsArea{
+    margin-bottom: 45.98px;
+}
+
+footer svg{
+    margin-left: 60.17px;
+}
+
+footer svg:first-child{
+    margin-left: 0px;
+}
+
+@media (max-width:1155px) {
+    .StarArea svg{
+        height: 16px;
+        width: 14px;
+    }
+
+    header{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .HomeSection{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .SkillsSection{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .PortfolioSection{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+@media (max-width:950px) {
+
+    header{
+        padding-left: 29px;
+        padding-right: 29px;
+    }
+
+    .HomeSection{
+        padding-left: 29px;
+        padding-right: 29px;
+    }
+
+    .SkillsSection{
+        padding-left: 29px;
+        padding-right: 29px;
+    }
+
+    .PortfolioSection{
+        padding-left: 29px;
+        padding-right: 29px;
+    }
+}
+
+@media (max-width:600px) {
+    .SkillsSection{
+        height: auto;
+    }
+    
+    .CardArea{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .Card p{
+        margin-bottom: 25px;
+    }
+
+}
+
+@media (max-width:425px) {
+
+    body.NoScroll{
+        overflow: hidden;
+    }
+
+    header{
+        height: 0px;
+    }
+    
+    main{
+        position: relative;
+    }
+
+    .BurgerArea{
+        position: absolute;
+        top:0px;
+        right: 33px;
+        width: 33px;
+        height: 18px;
+    }
+
+    .Burger{
+        display: block;
+        position: relative;
+        width: 33px;
+        height: 18px;
+    }
+    
+    nav{
+        position:absolute;
+        top:0px;
+        left: 0px;
+        width: 0%;
+        height: 120vh;
+        flex-direction: column;
+        background-color: #ffff;
+        justify-content: flex-start;
+        white-space:nowrap;
+        z-index: 5;
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+    nav a{
+        margin-left: 26px;
+        font-size: 34px;
+        margin-top: 68px;
+    }
+
+    nav.Active{
+        width:100%;
+        scroll-behavior: no;
+    }
+
+    .HomeSection .TextArea{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .TextArea .Middle{
+        align-self: flex-start;
+    }
+
+    .TextArea .Last{
+        display: none;
+    }
+
+
+
+    .SkillsSection{
+        height: auto;
+    }
+    
+    .CardArea{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Card{
+        margin-bottom: 81.71px;
+    }
+
+    .Card p{
+        margin-bottom: 25px;
+    }
+
+    .StarArea svg{
+        margin-bottom: 0px;
+    }
+
+}
+
